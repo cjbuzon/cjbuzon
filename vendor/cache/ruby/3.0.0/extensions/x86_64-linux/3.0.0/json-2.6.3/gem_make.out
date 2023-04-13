@@ -1,0 +1,13 @@
+current directory: /home/cjbuzon/Documents/GitHub/cjbuzon/vendor/cache/ruby/3.0.0/gems/json-2.6.3/ext/json
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20230413-52558-x408em.rb extconf.rb
+creating Makefile
+
+current directory: /home/cjbuzon/Documents/GitHub/cjbuzon/vendor/cache/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= clean
+
+current directory: /home/cjbuzon/Documents/GitHub/cjbuzon/vendor/cache/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\=
+make: Nothing to be done for 'all'.
+
+current directory: /home/cjbuzon/Documents/GitHub/cjbuzon/vendor/cache/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= install
