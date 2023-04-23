@@ -9,14 +9,13 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
 
-  <body>
-    <%# <main class="container mx-auto mt-28 px-5 flex"> %>
-    <main>
+  <body class="text-slate-700">
+    <main class="h-screen mx-auto my-auto p-5 md:p-10 lg:p-16 ">
       <%= yield %>
     </main>
-
-    <%= render partial: "layouts/footer"%>
   </body>
 </html>
