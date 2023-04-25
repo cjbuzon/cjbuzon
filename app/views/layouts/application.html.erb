@@ -15,7 +15,10 @@
 
   <body class="text-slate-700">
     <main class="h-screen mx-auto my-auto p-5 md:p-10 lg:p-16 ">
-      <%= yield %>
+      <%= render partial: "layouts/header"%>
+      <div class="second-section mt-4 md:mt-8 border-solid border-2 border-slate-800 w-full h-4/5 md:h-6/8 lg:h-3/4 xl:h-2/3">
+        <%= yield %>
+      </div>
     </main>
   </body>
 </html>
