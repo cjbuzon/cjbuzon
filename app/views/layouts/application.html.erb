@@ -14,11 +14,19 @@
   </head>
 
   <body class="text-slate-700">
-    <main class="h-screen mx-auto my-auto p-5 md:p-10 lg:p-16 ">
-      <%= render partial: "layouts/header"%>
-      <div class="second-section mt-4 md:mt-8 border-solid border-2 border-slate-800 w-full h-4/5 md:h-6/8 lg:h-3/4 xl:h-2/3">
-        <%= yield %>
+    <div data-controller="loading-screen">
+
+      <div class="grid h-screen place-items-center text-3xl md:text-4xl xl:text-6xl uppercase tracking-widest font-light" data-target="loading-screen.start">
+        Christian Jade Buzon
       </div>
-    </main>
+
+      <main class="h-screen mx-auto my-auto p-5 md:p-10 lg:p-16 reveal" data-target="loading-screen.main">
+        <%= render partial: "layouts/header"%>
+        <div class="second-section mt-4 md:mt-8 border-solid border-2 border-slate-800 w-full h-4/5 md:h-6/8 lg:h-3/4 xl:h-2/3 shadow-xl border-opacity-60">
+          <%= yield %>
+        </div>
+      </main>
+
+    </div>
   </body>
 </html>
