@@ -15,9 +15,9 @@
 
       <div class="py-5 my-auto">
         <div class="grid grid-cols-3 sm-gap-2 lg:gap-4 text-xs lg:text-lg xl:text-xl">
-          <div class="tracking-wider transition hover:scale-125 ease-in-out uppercase font-light cursor-crosshair">home</div>
+          <%= link_to "home", root_path, class: "tracking-wider transition hover:scale-125 ease-in-out uppercase font-light cursor-crosshair" %>
           <div class="tracking-wider transition hover:scale-125 ease-in-out uppercase font-light cursor-crosshair">projects</div>
-          <div class="tracking-wider transition hover:scale-125 ease-in-out uppercase font-light cursor-crosshair">contact</div>
+          <%= link_to "contact", contact_index_path, class: "tracking-wider transition hover:scale-125 ease-in-out uppercase font-light cursor-crosshair" %>
         </div>
       </div>
 
