@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
   resources :contact, only: :index
   resources :about_me, only: :index
+  resources :blog, only: :index
 end
