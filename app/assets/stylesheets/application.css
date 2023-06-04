@@ -16,20 +16,30 @@
 
 body {
   /* background-color: rgb(248, 248, 248); */
-  background-color: black !important;
+  background-color: #e2e2e2 !important;
+  font-family: 'Roboto Flex', sans-serif;
 }
 
 .first-section {
-  background-color: rgb(226, 226, 226);
+  background-color: #e2e2e2;
 }
 
 .second-section {
-  background-color: rgb(226, 226, 226);
+  background-color: #e2e2e2;
 }
 
 body {
   animation: colorchange 10s infinite;
 }
+
+h1, h2, h3 {
+  font-family: 'Lexend', sans-serif !important;
+}
+
+.loading-text {
+  font-family: 'Lexend Exa', sans-serif !important;
+}
+
 
 /* @keyframes colorchange {
   0% {
@@ -60,11 +70,11 @@ body {
 
 
 .first-section {
-  animation: running-border 5s infinite;
+  /* animation: running-border 5s infinite; */
 }
 
 .second-section {
-  animation: running-border 5s infinite;
+  /* animation: running-border 5s infinite; */
 }
 
 @keyframes running-border {

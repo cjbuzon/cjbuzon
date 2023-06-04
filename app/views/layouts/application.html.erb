@@ -11,19 +11,24 @@
     <%= javascript_importmap_tags %>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@700&family=Lexend:wght@700&family=Roboto+Flex&display=swap');
+    </style>
+
   </head>
 
   <body class="text-slate-700">
     <div data-controller="loading-screen" data-loading-screen-page="<%= controller_name %>">
 
-      <div class="select-none animate-pulse grid h-screen place-items-center text-3xl md:text-4xl xl:text-6xl uppercase tracking-widest font-light" data-target="loading-screen.start">
+      <div class="underline underline-offset-8 loading-text select-none animate-pulse grid h-screen place-items-center text-3xl md:text-4xl xl:text-6xl uppercase tracking-widest font-light" data-target="loading-screen.start">
         Christian Jade Buzon
       </div>
 
       <main class="h-screen mx-auto my-auto p-5 md:p-10 lg:p-16 reveal" data-target="loading-screen.main">
         <%= render partial: "layouts/header"%>
 
-        <div class="second-section mt-4 md:mt-8 border-solid border-4 border-[#1afe49] w-full h-4/6 lg:h-3/4 xl:h-2/3 shadow-sm shadow-[#1afe49] p-6 md:p-12">
+        <div class="second-section mt-4 md:mt-8 border-solid border-4 border-black w-full h-4/6 lg:h-3/4 xl:h-2/3 shadow-xl p-6 md:p-12">
           <%= yield %>
         </div>
       </main>

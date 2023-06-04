@@ -1,4 +1,4 @@
-<div class="first-section grid grid-cols-4 border-solid border-4 border-[#1afe49] px-5 md:px-10 lg:px-20 shadow-lg">
+<div class="first-section grid grid-cols-4 border-solid border-4 border-black px-5 md:px-10 lg:px-20 shadow-lg">
   <%# COLUMNS 1 %>
   <%# 3D Avatar %>
   <div class="mr-auto my-auto xl:mt-5 xl:mb-5 rounded-full shadow-slate-600 shadow-lg w-20 md:w-32 lg:w-36 xl:w-44 h-20 md:h-32 lg:h-36 xl:h-44 items-center ">
@@ -7,18 +7,20 @@
 
   <%# COLUMNS 2 %>
   <div class="col-span-3">
-    <div class="grid grid-rows-2 text-center xl:text-left">
+    <div class="grid grid-rows-2 text-center">
       <div class="py-5 xl:pt-10">
         <h1 class="text-xl lg:text-xl xl:text-4xl uppercase font-light tracking-tighter bg-transparent transition ease-in">christian jade buzon</h1>
         <code class="text-xs md:text-md lg:text-lg xl:text-xl">Ruby on Rails</code>
       </div>
 
-      <div class="py-5 my-auto">
-        <div class="grid grid-cols-3 sm-gap-2 lg:gap-4 text-xs lg:text-lg xl:text-xl">
-          <%= link_to "home", root_path, class: "tracking-wider transition hover:scale-125 ease-in-out uppercase font-light cursor-crosshair" %>
-          <div class="tracking-wider transition hover:scale-125 ease-in-out uppercase font-light cursor-crosshair">projects</div>
-          <%= link_to "contact", contact_index_path, class: "tracking-wider transition hover:scale-125 ease-in-out uppercase font-light cursor-crosshair" %>
+      <div class="pb-5 sm:py-5 my-auto w-40 sm:w-full mx-auto sm:mx-0">
+
+        <div class="w-42 sm:w-full grid grid-row sm:grid-cols-3 sm-gap-2 lg:gap-4 text-xs lg:text-lg xl:text-xl space-y-2 sm:space-y-0 sm:space-x-2 lg:space-x-4">
+          <%= link_to "home", root_path, class: "tracking-wider transition hover:scale-150 ease-in-out uppercase font-light cursor-crosshair hover:font-semibold hover:border-gray-600 cursor-crosshair border-4 border-black hover:bg-gray-500 hover:text-white hover:rounded-full" %>
+          <div class="tracking-wider transition hover:scale-150 ease-in-out uppercase font-light hover:font-semibold hover:border-gray-600 cursor-crosshair border-4 border-black hover:bg-gray-500 hover:text-white hover:rounded-full">projects</div>
+          <%= link_to "contact", contact_index_path, class: "tracking-wider transition hover:scale-150 ease-in-out uppercase font-light hover:font-semibold hover:border-gray-600 cursor-crosshair border-4 border-black hover:bg-gray-500 hover:text-white hover:rounded-full" %>
         </div>
+
       </div>
 
     </div>

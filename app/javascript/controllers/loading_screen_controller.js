@@ -10,7 +10,7 @@ export default class extends Controller {
 
         this.mainTarget.classList.remove("hidden"),
         this.mainTarget.classList.add('show');
-      }, 100);
+      }, 4000);
     } else {
       this.startTarget.classList.add("hidden"),
       this.mainTarget.classList.remove("hidden"),
